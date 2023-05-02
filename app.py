@@ -55,14 +55,10 @@ def remove_bg_local(input_path):
 
 
 def main():
-    # app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)), debug=False)
     for f in os.listdir("images"):
         if f.endswith(".png"):
             input_path = os.path.join("images", f)
             print(remove_bg_local(input_path))
-
-    # input_path = "images/075125.png"
-    # print(remove_bg_local(input_path))
 
 
 if __name__ == "__main__":
